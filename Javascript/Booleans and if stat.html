@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      // const name = 'Devaprasanth' ;
+      // const hour = 7;
+      // if(hour >= 6 && hour <= 12){
+      //     console.log(`Good Morning. ${name}!`);
+      // }else if(hour >= 13 && hour<= 17){
+      //   console.log(`Good afternoon. ${name}!`);
+      // } else {
+      //   console.log(`Good Night.${name}!`)
+      // }
+
+      // const age = 45;
+      // const isHoliday = false;
+      // if(( age <=6 || age >=65) && !isHoliday){
+      //   console.log('Discount');
+      // }else {
+      //   console.log('No Discount');
+      // }
+
+      // const randomnumber=Math.random(); 
+      // const result = randomnumber < 0.5 ? 'head' : 'Tail';
+
+        //   function greet(name){
+        //     if(!name){
+        //       console.log(`Hello there!`);
+        //     } else {
+        //     console.log(`Hello ${name}`);
+        //   }
+        // }
+          
+        //   greet('Deva');
+
+
+        function convertToFahrenheit(celsius){
+            return (celsius*9/5) + 32;
+        }
+
+
+
+        function convertToCelsius(Fahrenheit){
+          return(Fahrenheit-32)*5/9
+        }
+    
+
+        function convertTemperature(degree,unit){
+          if(unit === 'C'){
+            const result = convertToFahrenheit(degree);
+            return `${result}F`;
+          } else if ( unit === 'F'){
+            const result = convertToCelsius (degree);
+            return `${result}C`;
+          }
+        }
+          console.log(convertTemperature(45,'C'));
+          console.log(convertTemperature(86,'F'));
+    </script>
+
+
+
+</body>
+</html>

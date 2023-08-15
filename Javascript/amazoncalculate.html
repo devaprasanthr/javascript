@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>amazon cart calculate</title>
+</head>
+<body>
+  <style>
+
+    body{
+      font-family: Arial;
+    }
+    .cal-btn{
+      background-color: green;
+      color:white;
+      padding: 6px;
+      border:none;
+      border-radius: 5px;
+    }
+  </style>
+  <p>Amazon Shipping Calculator</p>
+
+  <div>
+    <input type="text" placeholder="Cost of order" class="js-input-btn">
+    <button class="cal-btn" onclick="
+     calElement();
+    ">Calculate</button>
+  </div>
+  <p class="js-btn-total"></p>
+
+  <script>
+     function calElement(){
+       const inputvalue = document.querySelector('.js-input-btn');
+       let cost= Number(inputvalue.value);
+       if(cost<40) {
+            cost +=10;
+       }
+       document.querySelector('.js-btn-total')
+        .innerHTML = `Your Answer is : $${cost}`;
+        
+     }
+  </script>
+</body>
+</html>

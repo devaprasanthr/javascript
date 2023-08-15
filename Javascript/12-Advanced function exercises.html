@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Function</title>
+</head>
+<body>
+  <!-- <script>
+    const add = function() {
+      console.log(2+3);
+    };
+    add(); 
+  </script> -->
+
+  <!-- <script>
+    const fun = function() {
+      console.log(2+3);
+    }
+    fun();
+    fun();
+     function runtwice(add) {
+       add();
+       add();
+     }
+     runtwice(function(){
+      console.log('deva');
+     });
+     runtwice(fun);
+      
+  </script> -->
+  <!-- <style>
+    .update-btn{
+      font-family: arial;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      
+    }
+  </style>
+
+  <button onclick="
+  timeout();
+  " class="js-btn update-btn">
+    Start
+  </button>
+
+  <script>
+   
+      function timeout() {
+        const button = document.querySelector('.js-btn');
+        setTimeout( function(){
+       button.innerHTML = 'Finished!';
+      },1000);
+    
+      }
+  </script> -->
+
+<!-- <style>
+  .style-btn{
+    font-family: arial;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+</style>
+  
+  <button onclick="
+  clickButton();
+   "
+   class="js-update-btn style-btn">
+        Start
+  </button>
+  <script>
+        function clickButton() {
+              const button = document.querySelector('.js-update-btn');
+              
+
+              
+                button.innerHTML = 'Loading...';
+           
+              
+              setTimeout(function() {
+                button.innerHTML = 'Finished!';
+              },1000);
+        }
+  </script> -->
+  <!-- <style>
+    .update-btn{
+      font-family: arial;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .style-btn{
+      font-size: 20px;
+      font-family: arial;
+    }
+  </style>
+
+    <button onclick="
+    addClickbtn();
+    "
+    class="js-cart-btn update-btn">
+      Add to Cart
+    </button>
+    <div class="js-display-btn style-btn"></div>
+
+    <script>
+      function addClickbtn() {
+        const button = document.querySelector('.js-display-btn');
+        button.innerHTML = 'Added';
+        setTimeout(function() {
+          button.innerHTML = '';
+        },2000);
+      }
+    </script> -->
+
+
+    
+   <!-- <style>
+    .update-btn{
+      font-family: arial;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+     .style-btn{
+      font-size: 20px;
+      font-family: arial;
+    }
+   </style>
+
+    <button onclick="
+    addClickbtn();
+    "
+    class="js-cart-btn update-btn">
+      Add to Cart
+    </button>
+    <div class="js-display-btn style-btn"></div>
+
+    <script>
+      let timeoutId;
+      function addClickbtn() {
+        const button = document.querySelector('.js-display-btn');
+        button.innerHTML = 'Added';
+     
+
+      clearTimeout(timeoutId);
+
+      timeoutId = setTimeout( function() {
+        button.innerHTML = '';
+      },2000);
+    }
+    </script> -->
+
+<!-- <title>App</title>
+
+<button onclick="message++;">
+  Add
+</button>
+<button onclick="message--;">
+  Remove
+</button>
+    <script>
+      let message = 2;
+      setInterval(function() {
+        if(document.title === 'App') {
+          document.title = `(${message}) New Message`;
+
+        } else {
+          document.title  = 'App';
+        }
+      },1000);
+    </script> -->
+
+
+
+    <!-- <script>
+     const multiply = (a,b) => a*b;
+     console.log(multiply(2,9));
+    </script> -->
+
+<!-- 
+    <script>
+      function countPositive(nums) {
+        let positiveNumbers=0;
+        nums.forEach((num) => {
+          if(num > 0) {
+            positiveNumbers ++;
+          }
+        });
+        return positiveNumbers ;
+      }
+      console.log(countPositive([1,-4,5]));
+    </script> -->
+
+
+    <!-- <script>
+      function addNum(array,num) {
+         return array.map((value) => 
+            value + num);
+      }
+      console.log(addNum([1,2,3],2));
+    </script> -->
+
+<!-- 
+    <script>
+      function addNum(array,num) {
+        return array.map((value) => value * num);
+      }
+      console.log(addNum([-2,-1,0,99],2));
+    </script> -->
+
+
+    <!-- <script>
+      function removeEgg(foods) {
+        return foods.filter((food) => food !=='egg'); 
+        
+      }
+      console.log(removeEgg(['egg','egg','apple','egg','ham']));
+    </script> -->
+
+    <!-- <script>
+      function removeEgg(foods) {
+        let removedegg = 0;
+        return foods.filter((food) => {
+          if( food === 'egg' && removedegg < 2) { 
+          removedegg ++;
+          return false;
+        };
+        return true;
+        });
+      }
+      console.log(removeEgg(['egg','egg','apple','egg','ham']));
+    </script> -->
+         
+       <!-- <button onclick="
+       ClickstartBtn();
+       " class="js-click-btn">
+        Start
+       </button>
+    <script>
+          function ClickstartBtn() {
+            const button = document.querySelector('.js-click-btn');
+            setTimeout(() => {
+              button.innerHTML = 'Finished!';
+            },1000);
+          }
+    </script> -->
+
+
+   
+          <!-- <button class="js-click-btn">
+          Start
+          </button>
+          <script>
+           document.querySelector('.js-click-btn')
+             .addEventListener('click',() =>{
+              const button = document.querySelector('.js-click-btn');
+              setTimeout(() => {
+                button.innerHTML = 'Finished!';
+              },1000);
+            });
+          </script> -->
+
+
+          <button class="js-button">
+            Start
+          </button>
+          <script>
+            document.querySelector('.js-button')
+              .addEventListener('click',() => {
+                  const button = document.querySelector('.js-button');
+                  setTimeout(() => {
+                    button.innerHTML = 'Loading...';
+                  });
+                  setTimeout(() => {
+                    button.innerHTML = 'Finished!'
+                  },1000);
+              });
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

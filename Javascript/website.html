@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button{
+        background-color: yellow;
+       }
+    </style>
+</head>
+<body>
+    <button title="good man">
+        Simon
+    </button>
+    <button title="love chocolate">
+        Chocolate
+    </button>
+    <p>Hello,world!</p>
+    <hr>
+    <hr>
+    <p>
+      Adults Plain Cotton T-shirt
+    </p>
+    <p>Price: $7.99</p>
+    <button onclick="alert('special offer')">
+      add to cart
+    </button>
+    <button onclick="alert('Loading.....'); alert('purchased');">
+      Buy Now
+    </button>
+
+
+    <button onclick="
+    console.log(`Cart Quantity: ${variable}`);
+">Show quantity </button>
+
+
+<button onclick="
+variable ++;
+console.log(`Cart Quantity: ${variable}`);
+">Add to cart </button>
+
+
+    <button onclick="
+          variable += 4;
+          console.log(`Cart Quantity: ${variable}`);
+    ">+4</button>
+
+
+
+<button onclick="
+variable += 6;
+console.log(`Cart Quantity: ${variable}`);
+">+6</button>
+
+
+<button onclick="
+variable --;
+console.log(`Cart Quantity: ${variable}`);
+">Remove from cart</button>
+        
+
+
+
+    <script>
+       const name = 'Gaara';
+       console.log(`My Name is: ${name}`);
+    </script>
+    <script>
+      const Cost = (5 + 2*3 + 9);
+      console.log(`Cost: $${Cost}`);
+      const tax = Cost * 0.1;
+      console.log(`Estimate Tax (10%): $${tax}`);
+      const total = Cost + tax;
+      console.log(`Total cost: $${total}`);
+      let variable= 0;
+    </script>
+     
+
+
+
+
+</body>
+</html>

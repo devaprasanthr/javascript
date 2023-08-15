@@ -1,0 +1,124 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .cart-btn{
+       background-color: rgb(255,216,20);
+       color:black;
+       padding:10px 30px; 
+       border:none;
+       border-radius: 20px;
+       font-size: 20px;
+       display: block;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .req-btn{
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .sched-btn{
+      background-color: rgb(230,230,230);
+      color: black;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 8px;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  </style>
+
+
+  <button class="cart-btn">
+    Add to Cart
+  </button>
+
+
+
+  <button class="req-btn">
+    Request now
+  </button>
+  <button class="sched-btn">
+    Sheduled for later
+  </button>
+      
+  <button class="js-test-btn">
+    Test
+  </button>
+
+  <script>
+      const List = document.querySelector('.js-test-btn');
+      console.log(List.classList.contains('js-test-btn'));
+  </script>
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming</title>
+ </head>
+ <body>
+  <style>
+      .game-btn{
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      }
+      .is-toggled{
+          background-color: rgb(230,230,230);
+          color:black;
+      }
+  </style>
+     <button class="game-btn js-game-btn" onclick="
+     inputValue('.js-game-btn'); ">
+     
+     Gaming</button>
+     <button class="game-btn js-game-btn-2" onclick="
+     inputValue('.js-game-btn-2'); ">
+      Music
+     </button>
+     <button class="game-btn js-game-btn-3" onclick="
+     inputValue('.js-game-btn-3'); ">
+      Tech
+     </button>
+ 
+ <script>
+            function inputValue(selector){
+             const button =  document.querySelector(selector);
+             if(!button.classList.contains('is-toggled')){
+              
+              button.classList.add('is-toggled');
+             } else{
+              button.classList.remove('is-toggled');
+             }
+             console.log(button);
+             
+            }
+     </script> 
+    
+ </body>
+ </html>

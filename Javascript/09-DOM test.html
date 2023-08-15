@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+</head>
+<body>
+    <button>9a</button>
+    <button class="js-btn" onclick="
+    clickbutton ();
+    " >9b</button>
+
+    <button  onclick="
+    document.querySelector('.js-btnn')
+    .innerHTML = 'Your Choice : Heads'
+    ">Heads</button>
+    <button  onclick="
+    document.querySelector('.js-btnn')
+     .innerHTML = 'YOUR Choice : Tails'
+    ">Tail</button>
+    <p class="js-btnn"></p>
+
+
+        <div>
+          <input type="text" placeholder="Name" class="js-submit-btn" onkeydown="
+          enterKey();
+          ">
+          <button onclick="
+          submitBtn();
+          ">submit</button>
+        </div>
+        <p class="js-name-btn">
+
+        </p>
+
+
+
+
+        <div>
+          <input type="text" placeholder="cost of order" 
+          class="js-num-btn" onkeydown="autokey();">
+          <button onclick="
+          enterAmount();
+          ">Calculate</button>
+        </div>
+        <p class="js-result-btn">
+
+        </p>
+
+
+</body>
+<script>
+
+            function autokey() {
+              if(event.key === 'enter');
+              enterAmount();
+            }
+
+            function enterAmount() {
+              const inputElement = document.querySelector('.js-num-btn');
+                let costValue = Number(inputElement.value);
+                if(costValue<60){
+                  costValue += 10;
+                }
+                document.querySelector('.js-result-btn')
+                 .innerHTML = `Your amount is: $${costValue.toFixed()}`;
+            }
+
+
+
+
+
+
+            function enterKey(){
+                if(event.key === 'Enter');
+                submitBtn();
+            }
+
+
+           function submitBtn (){
+            const inputtext = document.querySelector('.js-submit-btn');
+            let nameText = inputtext.value;
+             document.querySelector('.js-name-btn')
+              .innerHTML = `Your name is: ${nameText}.`;
+           }
+
+
+
+
+
+
+
+  console.log(document.querySelector('button'));
+
+   function clickbutton () {
+    const cilckElement =  document.querySelector(".js-btn")
+     .innerHTML = '9b done!'
+   }
+      
+
+
+
+
+
+</script>
+</html>

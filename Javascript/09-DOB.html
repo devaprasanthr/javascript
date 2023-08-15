@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOB</title>
+</head>
+<body>
+  <button>hello</button>
+  <button class="js-button">goodjob</button>
+ <script>
+   /*console.log(document.title);
+  document.title='GOOD MORNING';
+  console.log(document.body.innerHTML);
+  document.body.innerHTML = 'button';
+console.log( document.querySelector('button'));*/
+        
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button')
+        .innerHTML='Changed';
+
+        const button = document.querySelector('.js-button').innerHTML;
+        
+        document.querySelector('.js-button').innerHTML ='World';
+        console.log(button);
+ </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quatity method</title>
+</head>
+<body>
+  <button onclick="
+    console.log(`CartQuantity : ${cartQuantity}`);
+    ">Show CartQuantity</button>
+  <button onclick="
+  updatecartquantity(1);
+  ">Add to cart</button>
+  <button onclick="updatecartquantity(2);">+2</button>
+  <button onclick="updatecartquantity(3);">+3</button>
+  <button onclick="updatecartquantity(4);">+4</button>
+  <button onclick="updatecartquantity(5);">+5</button>
+  <button onclick="updatecartquantity(-1);">Remove CartQuantity</button>
+  <button onclick="updatecartquantity(-2);">-2</button>
+  <button onclick="updatecartquantity(-3);">-3</button>
+  <button onclick="updatecartquantity(-4);">-4</button>
+  <button onclick="updatecartquantity(-5);">-5</button>
+  <button onclick="
+  cartQuantity=0;
+  console.log('The Cart is Reset!..');
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Reset Cart</button>
+  <script>
+    let cartQuantity=0;
+
+     function updatecartquantity(change) {
+      if(cartQuantity + change > 15) {
+          alert(`Cart is full`);
+      } else if( cartQuantity + change <0) {
+        alert(`The Cart is Empty`);
+      } else {
+        cartQuantity = cartQuantity + change;
+        console.log(`Cart Quantity: ${cartQuantity}`);
+      } 
+     }
+  </script>
+</body>
+</html>

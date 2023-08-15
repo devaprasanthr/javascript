@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dom projects</title>
+</head>
+<body>
+        <h1>SHOW PRODUCT</h1>
+        <button onclick="
+        product();
+        " class="js-order-btn">ORDER</button>
+        <button onclick="
+        like();
+        " class="js-like-btn">Like</button>
+        <button onclick="
+        subscribe();
+        " class="js-subs-btn">
+          subscribe
+        </button>
+
+          <div>
+            <h1>Amazon Shipping Calaculator</h1>
+            <p>Orders under $40 = + $10 shipping. </p>
+              <p>Orders over $40 = FREE Shipping.</p>
+          <div>
+            <input type="text" input="number" placleholder="Enter value" class="js-cal-btn" 
+            onkeydown="
+              handletoEnter(event);
+              ">
+            <button onclick="
+            Calculator();
+            ">Calculate</button>
+          </div>
+          <div >
+
+          <p  class="js-total-btn"></p>
+
+
+
+
+    <script>
+
+                  function handletoEnter(event){
+                    if(event.key === 'Enter');
+                    Calculator();
+                  }
+
+
+
+          function Calculator(){
+                const calValuebtn = document.querySelector('.js-cal-btn');
+                let cost = Number(calValuebtn.value);
+
+                if(cost < 40){
+                  cost = cost + 10;
+                } 
+                document.querySelector('.js-total-btn')
+                .innerHTML = `$${cost}`;
+
+          }
+
+
+
+
+
+
+
+
+
+
+      function product() {
+        const btnelement=document.querySelector('.js-order-btn');
+        console.log(btnelement)
+        if(btnelement.innerText === 'ORDER'){
+          btnelement.innerHTML= 'Order placed 👍👍 ';
+        } else{
+          btnelement.innerHTML = 'ORDER';
+        }
+      }
+
+            function like(){
+              const btnElement = document.querySelector('.js-like-btn');
+              if(btnElement.innerText === 'Like') {
+                btnElement.innerHTML = 'Liked❤️';
+              } else{
+                btnElement.innerHTML = 'Like';
+              }
+            }
+
+
+            function subscribe(){
+              const subsbtn = document.querySelector('.js-subs-btn'); 
+                if(subsbtn.innerText === 'subscribe') {
+                    subsbtn.innerHTML = 'subscribed 🔔';
+                } else {
+                  subsbtn.innerHTML = 'subscribe';
+                }
+              }
+              
+            
+
+    </script>
+
+
+
+
+
+  <!-- <h1>Youtube Subcribed Button</h1>
+  <button onclick="
+      subscribe();
+  " class="js-subscribe-btn">Subscribe</button>
+
+  <script>
+    function subscribe() {
+      const btnelement = document.querySelector('.js-subscribe-btn');
+
+      if(btnelement.innerText === 'Subscribe') {
+        btnelement.innerHTML = 'Subscribed';
+      } else{
+        btnelement.innerHTML = 'Subscribe';
+      }
+    } -->
+
+
+
+
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* The word "toggle" means turn on/off. */
+      .toggle-button {
+        background-color: rgb(230, 230, 230);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="toggle-button js-button" onclick="
+      const button = document.querySelector('.js-button');
+      console.log(button);
+      if (!button.classList.contains('is-toggled')) {
+        button.classList.add('is-toggled');
+      } else {
+        button.classList.remove('is-toggled');
+      }
+    ">Gaming</button>
+  </body>
+</html>
+
+
